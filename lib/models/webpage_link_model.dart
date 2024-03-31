@@ -25,8 +25,7 @@ class WebpageLinkModel {
     ),
     WebpageLinkModel(
       url: 'https://dart.dev',
-      image:
-          'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+      image: 'https://dart.dev/assets/img/logo/dart-logo-for-shares.png?2',
       description:
           'Dart is a client-optimized language for fast apps on any platform.',
       title: 'Dart',
@@ -45,16 +44,16 @@ class WebpageLinkModel {
     WebpageLinkModel(
       url: 'https://twitter.com',
       image:
-          'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+          'https://cdn.cms-twdigitalassets.com/content/dam/blog-twitter/x/blog_x_card.png.img',
       description:
           'Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets".',
       title: 'Twitter',
+      
       category: 'Social Media',
     ),
     WebpageLinkModel(
       url: 'https://facebook.com',
-      image:
-          'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+      image: 'https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico',
       description:
           'Facebook is an American online social media and social networking service.',
       title: 'Facebook',
@@ -62,8 +61,7 @@ class WebpageLinkModel {
     ),
     WebpageLinkModel(
       url: 'https://instagram.com',
-      image:
-          'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+      image: 'https://static.cdninstagram.com/rsrc.php/v3/yR/r/hexDR1NOpRC.png',
       description:
           'Instagram is an American photo and video sharing social networking service.',
       title: 'Instagram',
