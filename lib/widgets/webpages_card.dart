@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_view/models/webpage_link_model.dart';
-import 'package:web_view/screens/homepage.dart';
-import 'package:web_view/widgets/webview_test.dart';
+import 'package:web_view/widgets/web_view_container.dart';
 
 class WebpagesCard extends StatelessWidget {
   const WebpagesCard({
@@ -16,7 +15,11 @@ class WebpagesCard extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => Webview(url: webpageLink.url)),
+          MaterialPageRoute(
+              builder: (_) => Webview(
+                    url: webpageLink.url,
+                    title: webpageLink.title,
+                  )),
         );
       },
       child: Container(
@@ -35,7 +38,7 @@ class WebpagesCard extends StatelessWidget {
           children: [
             Text(
               webpageLink.title,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 24,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -65,7 +68,7 @@ class WebpagesCard extends StatelessWidget {
                   ),
                   child: Text(
                     webpageLink.category,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 14,
                       color: Colors.white,
                     ),
@@ -78,7 +81,7 @@ class WebpagesCard extends StatelessWidget {
               webpageLink.description,
               maxLines: 4,
               textAlign: TextAlign.left,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 12,
                 color: Colors.white,
                 overflow: TextOverflow.ellipsis,

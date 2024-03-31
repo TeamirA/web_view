@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_view/models/webpage_link_model.dart';
 import 'package:web_view/widgets/category_widegt.dart';
-import 'package:web_view/widgets/webpages_card.dart';
 import 'package:web_view/widgets/webpages_list.dart';
 
 class Homepage extends StatefulWidget {
@@ -17,8 +16,8 @@ class _HomepageState extends State<Homepage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          surfaceTintColor: Theme.of(context).colorScheme.primary,
-          backgroundColor: Theme.of(context).colorScheme.primary,
+          // surfaceTintColor: Theme.of(context).colorScheme.primary,
+          // backgroundColor: Theme.of(context).colorScheme.primary,
           title: const Text('Web Viewer'),
           actions: const <Widget>[
             IconButton(
