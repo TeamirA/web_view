@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_view/models/webpage_link_model.dart';
 import 'package:web_view/screens/homepage.dart';
-import 'package:web_view/widgets/webpages_card.dart';
 
 void main() {
   runApp(const MyApp());

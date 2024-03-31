@@ -1,133 +1,85 @@
 import 'package:flutter/material.dart';
-import 'package:web_view/models/webpage_link_model.dart';
+import 'package:web_view/screens/homepage.dart';
 
 class WebpagesCard extends StatelessWidget {
   const WebpagesCard({
     super.key,
-    required this.webpageLink,
+    // required this.webpageLink,
   });
 
-  final WebpageLink webpageLink;
+  // final WebpageLink webpageLink;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //     builder: (_) => DestinationScreen(
-        //       destination: destination,
-        //     ),
-        //   ),
-        // );
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const Homepage()),
+        );
       },
       child: Container(
-        padding: const EdgeInsets.all(11.5),
-        height: 325,
-        width: 225,
-        child: Stack(
-          clipBehavior: Clip.none,
+        padding: const EdgeInsets.all(10.0),
+        margin: const EdgeInsets.only(left: 20),
+        height: 260,
+        width: 220,
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 133, 121, 121),
+          borderRadius: BorderRadius.all(Radius.circular(24)),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
           children: [
-            Positioned(
-              top: 160,
-              // bottom: 200,
-              left: -11.5,
-              child: Container(
-                padding: const EdgeInsets.all(15.0),
-                height: 190.0,
-                width: 225.0,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(15.0),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey[300]!,
-                      blurRadius: 8.0,
-                      offset: const Offset(0, 20),
-                      spreadRadius: -5,
-                    ),
-                  ],
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      webpageLink.description,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleLarge
-                          ?.copyWith(fontWeight: FontWeight.bold, fontSize: 20),
-                    ),
-                    Text(
-                      webpageLink.description,
-                      maxLines: 5,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodySmall
-                          ?.copyWith(fontWeight: FontWeight.w300),
-                    ),
-                  ],
-                ),
+            const Text(
+              'Google',
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
             ),
-            Hero(
-              tag: webpageLink.imageUrl,
-              child: Container(
-                padding: const EdgeInsets.all(15.0),
-                height: 200.0,
-                width: 200.0,
-                decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.all(Radius.circular(15.0)),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 8.0,
-                        offset: Offset(0, 10),
-                        spreadRadius: -5),
-                  ],
-                  image: DecorationImage(
-                    image: AssetImage(webpageLink.imageUrl),
-                    fit: BoxFit.cover,
+            const SizedBox(height: 10),
+            SizedBox(
+              height: 70,
+              child: Image.network(
+                'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.center,
+                filterQuality: FilterQuality.high,
+              ),
+            ),
+            const SizedBox(height: 5),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(5.0),
+                  margin: const EdgeInsets.all(5.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: const Color.fromARGB(255, 30, 85, 29),
+                  ),
+                  child: const Text(
+                    'Search Engine',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      webpageLink.title,
-                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                            color: Colors.white,
-                          ),
-                    ),
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.near_me,
-                          color: Colors.white,
-                          size: 15.0,
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          webpageLink.title,
-                          style: const TextStyle(
-                            color: Colors.white,
-                          ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
+              ],
+            ),
+            const SizedBox(height: 5),
+            const Text(
+              'Google Search Engine is the best search engine in the world. It is also the homepage of the Google Chrome browser',
+              maxLines: 4,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.white,
+                overflow: TextOverflow.ellipsis,
               ),
             ),
           ],
