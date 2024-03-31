@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_view/models/webpage_link_model.dart';
+import 'package:web_view/widgets/category_widegt.dart';
 import 'package:web_view/widgets/webpages_card.dart';
 import 'package:web_view/widgets/webpages_list.dart';
 
@@ -35,10 +36,7 @@ class _HomepageState extends State<Homepage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const SizedBox(height: 20),
-              const Text(
-                'Social Medias',
-                style: TextStyle(fontSize: 24),
-              ),
+              const CategoryWidget(text: 'Social Medias'),
               const SizedBox(height: 10),
               WebpagesList(webpages: WebpageLinkModel.sampleWebpages),
             ],

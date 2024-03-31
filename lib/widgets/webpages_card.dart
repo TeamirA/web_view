@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_view/models/webpage_link_model.dart';
 import 'package:web_view/screens/homepage.dart';
+import 'package:web_view/widgets/webview_test.dart';
 
 class WebpagesCard extends StatelessWidget {
   const WebpagesCard({
@@ -15,7 +16,7 @@ class WebpagesCard extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => const Homepage()),
+          MaterialPageRoute(builder: (_) => Webview(url: webpageLink.url)),
         );
       },
       child: Container(
@@ -62,8 +63,8 @@ class WebpagesCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                     color: const Color.fromARGB(255, 30, 85, 29),
                   ),
-                  child: const Text(
-                    'Search Engine',
+                  child: Text(
+                    webpageLink.category,
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.white,
@@ -73,8 +74,8 @@ class WebpagesCard extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 5),
-            const Text(
-              'Google Search Engine is the best search engine in the world. It is also the homepage of the Google Chrome browser',
+            Text(
+              webpageLink.description,
               maxLines: 4,
               textAlign: TextAlign.left,
               style: TextStyle(
