@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:web_view/models/webpage_link_model.dart';
 import 'package:web_view/widgets/webpages_card.dart';
+import 'package:web_view/widgets/webpages_list.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -28,15 +30,17 @@ class _HomepageState extends State<Homepage> {
             ),
           ],
         ),
-        body: const SingleChildScrollView(
+        body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
+              const SizedBox(height: 20),
+              const Text(
                 'Social Medias',
                 style: TextStyle(fontSize: 24),
               ),
-              WebpagesCard(),
+              const SizedBox(height: 10),
+              WebpagesList(webpages: WebpageLinkModel.sampleWebpages),
             ],
           ),
         ),

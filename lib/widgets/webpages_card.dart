@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:web_view/models/webpage_link_model.dart';
 import 'package:web_view/screens/homepage.dart';
 
 class WebpagesCard extends StatelessWidget {
   const WebpagesCard({
     super.key,
-    // required this.webpageLink,
+    required this.webpageLink,
   });
 
-  // final WebpageLink webpageLink;
+  final WebpageLinkModel webpageLink;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -31,8 +32,8 @@ class WebpagesCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text(
-              'Google',
+            Text(
+              webpageLink.title,
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
@@ -43,7 +44,7 @@ class WebpagesCard extends StatelessWidget {
             SizedBox(
               height: 70,
               child: Image.network(
-                'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+                webpageLink.image,
                 fit: BoxFit.scaleDown,
                 alignment: Alignment.center,
                 filterQuality: FilterQuality.high,

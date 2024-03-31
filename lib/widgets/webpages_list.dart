@@ -5,23 +5,24 @@ import 'package:web_view/widgets/webpages_card.dart';
 class WebpagesList extends StatelessWidget {
   const WebpagesList({
     super.key,
-    required this.webpageLinks,
+    required this.webpages,
   });
-  final List<WebpageLinkModel> webpageLinks;
+
+  final List<WebpageLinkModel> webpages;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 400,
+      height: 270,
       child: ListView.builder(
-        itemCount: webpageLinks.length,
+        itemCount: webpages.length,
         scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(0),
         itemBuilder: (context, index) {
-          return const Padding(
-            padding: EdgeInsets.all(5),
+          return Padding(
+            padding: const EdgeInsets.all(0),
             child: WebpagesCard(
-              // webpageLink: webpageLinks[index],
+              webpageLink: webpages[index],
             ),
           );
         },
