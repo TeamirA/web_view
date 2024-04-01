@@ -61,6 +61,8 @@ class _WebviewState extends State<Webview> {
     return Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.arrow_back_ios_new_rounded,

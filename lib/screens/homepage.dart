@@ -16,16 +16,22 @@ class _HomepageState extends State<Homepage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           // surfaceTintColor: Theme.of(context).colorScheme.primary,
           // backgroundColor: Theme.of(context).colorScheme.primary,
-          title: const Text('Web Viewer'),
+          title: const Text(
+            'Web Viewer',
+            style: TextStyle(
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 24),
+          ),
           actions: const <Widget>[
             IconButton(
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.search, color: Colors.black),
               onPressed: null,
             ),
             IconButton(
-              icon: Icon(Icons.more_vert),
+              icon: Icon(Icons.more_vert, color: Colors.black),
               onPressed: null,
             ),
           ],

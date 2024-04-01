@@ -20,15 +20,15 @@ class WebpageLinkModel {
   static final sampleWebpages = [
     [
       WebpageLinkModel(
-        url: 'https://flutter.dev',
-        title: "Flutter - Build apps for any screen",
+        url: 'https://www.coursera.org/',
+        title: "Coursera | Degrees, Certificates, & Free Online Courses",
         description:
-            "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
+            "Learn new job skills in online courses from industry leaders like Google, IBM, & Meta. Advance your career with top degrees from Michigan, Penn, Imperial & more. ",
         images:
-            "https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png",
-        // sitename: "Flutter",
+            "https://s3.amazonaws.com/coursera/media/Grid_Coursera_Partners_updated.png",
+        // sitename: "Coursera",
         // favicon:
-        // "https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png",
+        //     "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-32x32.png",
         category: 'Education',
       ),
       WebpageLinkModel(
@@ -53,15 +53,15 @@ class WebpageLinkModel {
         category: 'Education',
       ),
       WebpageLinkModel(
-        url: 'https://www.coursera.org/',
-        title: "Coursera | Degrees, Certificates, & Free Online Courses",
+        url: 'https://flutter.dev',
+        title: "Flutter - Build apps for any screen",
         description:
-            "Learn new job skills in online courses from industry leaders like Google, IBM, & Meta. Advance your career with top degrees from Michigan, Penn, Imperial & more. ",
+            "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
         images:
-            "https://s3.amazonaws.com/coursera/media/Grid_Coursera_Partners_updated.png",
-        // sitename: "Coursera",
+            "https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png",
+        // sitename: "Flutter",
         // favicon:
-        //     "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-32x32.png",
+        // "https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png",
         category: 'Education',
       ),
     ],
@@ -69,73 +69,68 @@ class WebpageLinkModel {
       // social media models
       WebpageLinkModel(
         url: 'https://twitter.com',
+        title: "X. It’s what’s happening / X",
+        description:
+            "From breaking news and entertainment to sports and politics, get the full story with all the live commentary.",
         images:
-            'https://cdn.cms-twdigitalassets.com/content/dam/blog-twitter/x/blog_x_card.png.img',
-        description:
-            'Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets".',
-        title: 'Twitter',
-        category: 'Social Media',
-      ),
-      WebpageLinkModel(
-        url: 'https://facebook.com',
-        images: 'https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico',
-        description:
-            'Facebook is an American online social media and social networking service.',
-        title: 'Facebook',
+            "https://cdn.cms-twdigitalassets.com/content/dam/blog-twitter/x/blog_x_card.png.img.fullhd.medium.png",
         category: 'Social Media',
       ),
       WebpageLinkModel(
         url: 'https://instagram.com',
-        images:
-            'https://static.cdninstagram.com/rsrc.php/v3/yR/r/hexDR1NOpRC.png',
+        title: "Instagram",
         description:
-            'Instagram is an American photo and video sharing social networking service.',
-        title: 'Instagram',
+            "Create an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.",
+        images:
+            "https://static.cdninstagram.com/rsrc.php/v3/yR/r/hexDR1NOpRC.png",
         category: 'Social Media',
       ),
     ],
     [
       // news models
       WebpageLinkModel(
-        url: 'https://cnn.com',
-        images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        url: 'https://nytimes.com',
+        title:
+            "The New York Times - Breaking News, US News, World News and Videos",
         description:
-            'Cable News Network is a multinational news-based pay television channel headquartered in Atlanta.',
-        title: 'CNN',
-        category: 'News',
-      ),
-      WebpageLinkModel(
-        url: 'https://bbc.com',
+            "Live news, investigations, opinion, photos and video by the journalists of The New York Times from more than 150 countries around the world. Subscribe for coverage of U.S. and international news, politics, business, technology, science, health, arts, sports and more.",
         images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
-        description:
-            'The British Broadcasting Corporation is a public service broadcaster.',
-        title: 'BBC',
+            "https://static01.nyt.com/newsgraphics/images/icons/defaultPromoCrop.png",
         category: 'News',
       ),
       WebpageLinkModel(
         url: 'https://aljazeera.com',
-        images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        title: "Breaking News, World News and Video from Al Jazeera",
         description:
-            'Al Jazeera is a state-funded broadcaster in Doha, Qatar, owned by the Al Jazeera Media Network.',
-        title: 'Al Jazeera',
+            "News, analysis from the Middle East & worldwide, multimedia & interactives, opinions, documentaries, podcasts, long reads and broadcast schedule.",
+        images: "https://www.aljazeera.com/images/logo_aje_social.png",
+        category: 'News',
+      ),
+
+      WebpageLinkModel(
+        url: "https://cnn.com",
+        title: "Breaking News, Latest News and Videos | CNN",
+        description:
+            "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.",
+        images:
+            "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-1204723497.jpg?c=16x9&q=h_720,w_1280,c_fill",
         category: 'News',
       ),
       WebpageLinkModel(
-        url: 'https://nytimes.com',
-        images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        url: 'https://bbc.com',
+        title:
+            "BBC Home -  World News,  Sports, Business, Innovation, Climate, Culture, Video & Audio",
         description:
-            'The New York Times is an American newspaper based in New York City with worldwide influence and readership.',
-        title: 'The New York Times',
+            "Visit BBC for trusted reporting on the latest world and US news, sports, business, climate, innovation, culture and much more.",
+        images:
+            "https://ichef.bbci.co.uk/news/480/cpsprodpb/0EAB/production/_133055730_katyaprotestor.jpg.webp",
         category: 'News',
       ),
+
       WebpageLinkModel(
         url: 'https://washingtonpost.com',
         images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH0TBnPmZZSPQUvS1mytxgx9WznBmd9xQcK2m89syq9Q&s',
         description:
             'The Washington Post is an American daily newspaper published in Washington, D.C.',
         title: 'The Washington Post',
@@ -144,49 +139,31 @@ class WebpageLinkModel {
     ],
     [
       // shopping models
-      WebpageLinkModel(
-        url: 'https://amazon.com',
-        images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
-        description:
-            'Amazon is an American multinational technology company which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.',
-        title: 'Amazon',
-        category: 'Shopping',
-      ),
+
       WebpageLinkModel(
         url: 'https://ebay.com',
-        images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        title: "Electronics, Cars, Fashion, Collectibles & More | eBay",
         description:
-            'eBay Inc. is an American multinational e-commerce corporation based in San Jose, California.',
-        title: 'eBay',
+            "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low prices & free shipping on many items.",
+        images:
+            "https://ir.ebaystatic.com/cr/v/c1/ebay-logo-1-1200x630-margin.png",
         category: 'Shopping',
       ),
       WebpageLinkModel(
-        url: 'https://aliexpress.com',
-        images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        url: 'https://amazon.com',
+        title: "Amazon: Online Shopping for Electronics, Apparel, Books & more",
         description:
-            'AliExpress is an online retail service based in China that is owned by the Alibaba Group.',
-        title: 'AliExpress',
-        category: 'Shopping',
-      ),
-      WebpageLinkModel(
-        url: 'https://jumia.com',
+            "Low prices across earth's biggest selection of books, music, DVDs, electronics, computers, software, apparel & accessories, shoes, jewelry, housewares, furniture, sporting goods, beauty & personal care & just about anything.",
         images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
-        description:
-            'Jumia is an online marketplace for electronics, and fashion among others.',
-        title: 'Jumia',
+            "https://m.media-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png",
         category: 'Shopping',
       ),
       WebpageLinkModel(
         url: 'https://konga.com',
-        images:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        title: "Konga Online Shopping | Buy Phones, Fashion, Electronics",
         description:
-            'Konga is an online marketplace for electronics, and fashion among others.',
-        title: 'Konga',
+            "Shop Online for Electronics, Phones, Computers, Accessories, Fashion, Shoes, Household Equipments, Wines, Babies, Toys, Furnitures, Groceries, Sport and Fitness, Books and more in Nigeria from top brands with 100% satisfaction and fast shipping. Konga Online Shopping.",
+        images: "https://konga.com/static/og-image.jpg",
         category: 'Shopping',
       ),
     ],
@@ -194,26 +171,25 @@ class WebpageLinkModel {
       // entertainment models
       WebpageLinkModel(
         url: 'https://netflix.com',
-        images:
-            'https://netflix.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        title: "Netflix - Watch TV Shows Online, Watch Movies Online",
         description:
-            'Netflix, Inc. is an American over-the-top content platform and production company.',
-        title: 'Netflix',
+            "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.",
+        images:
+            "https://assets.nflxext.com/ffe/siteui/vlv3/7ca5b7c7-20aa-42a8-a278-f801b0d65fa1/5c5bb0ab-3b4a-40fb-a1d4-11d0311bc6c0/US-en-20240326-popsignuptwoweeks-perspective_alpha_website_small.jpg",
         category: 'Entertainment',
       ),
       WebpageLinkModel(
         url: 'https://youtube.com',
-        images:
-            'https://youtube.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        title: "YouTube",
         description:
-            'YouTube is an American online video-sharing platform headquartered in San Bruno, California.',
-        title: 'YouTube',
+            "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+        images: "https://www.youtube.com/img/desktop/yt_1200.png",
         category: 'Entertainment',
       ),
       WebpageLinkModel(
         url: 'https://spotify.com',
         images:
-            'https://spotify.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+            'https://martech.org/wp-content/uploads/2017/09/spotify-logo-1920x1080.jpg',
         description:
             'Spotify Technology S.A. is a Swedish music streaming and media services provider.',
         title: 'Spotify',
@@ -221,17 +197,17 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://soundcloud.com',
-        images:
-            'https://soundcloud.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        title: "SoundCloud | Stream and listen to music online for free",
         description:
-            'SoundCloud is an online audio distribution platform and music sharing website.',
-        title: 'SoundCloud',
+            "Discover and play over 320 million music tracks. Join the world’s largest online community of artists, bands, DJs, and audio creators.",
+        images:
+            "https://a-v2.sndcdn.com/assets/images/meta/soundcloud-unfurl-square.png",
         category: 'Entertainment',
       ),
       WebpageLinkModel(
         url: 'https://tiktok.com',
         images:
-            'https://tiktok.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+            'https://p16-va-tiktok.ibyteimg.com/obj/musically-maliva-obj/75fc87f6db254c392eeffa84daeeaa9f.png',
         description:
             'TikTok is a Chinese video-sharing social networking service owned by ByteDance.',
         title: 'TikTok',
