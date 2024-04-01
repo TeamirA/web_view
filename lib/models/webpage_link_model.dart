@@ -1,43 +1,67 @@
 class WebpageLinkModel {
   WebpageLinkModel({
-    required this.url,
-    required this.image,
-    required this.description,
     required this.title,
+    required this.description,
+    required this.images,
+    required this.url,
     required this.category,
+    // required this.favicon,
+    // required this.sitename,
   });
 
   final String url;
-  final String image;
+  final String images;
   final String description;
   final String title;
   final String category;
+  // final String favicon;
+  // final String sitename;
 
   static final sampleWebpages = [
     [
       WebpageLinkModel(
         url: 'https://flutter.dev',
-        image:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
+        title: "Flutter - Build apps for any screen",
         description:
-            'Flutter is Google’s UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.',
-        title: 'Flutter',
+            "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.",
+        images:
+            "https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png",
+        // sitename: "Flutter",
+        // favicon:
+        // "https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png",
         category: 'Education',
       ),
       WebpageLinkModel(
-        url: 'https://dart.dev',
-        image: 'https://dart.dev/assets/img/logo/dart-logo-for-shares.png?2',
+        url: 'https://duolingo.com',
+        title: "Duolingo - The world's best way to learn a language",
         description:
-            'Dart is a client-optimized language for fast apps on any platform.',
-        title: 'Dart',
+            "Duolingo is the world's most popular way to learn a language. It's 100% free, fun and science-based. Practice online on duolingo.com or on the apps!",
+        images: "https://www.duolingo.com/images/facebook/duo-08523a2.jpg",
+        // sitename: "Duolingo",
+        // favicon: "https://d35aaqx5ub95lt.cloudfront.net/favicon.ico",
         category: 'Education',
       ),
       WebpageLinkModel(
-        url: 'https://pub.dev',
-        image:
-            'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
-        description: 'Find and use packages to build Dart and Flutter apps.',
-        title: 'Pub.dev',
+        url: 'https://www.khanacademy.org/',
+        title: "Khan Academy | Free Online Courses, Lessons & Practice",
+        description:
+            "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, history, and more. Khan Academy is a nonprofit with the mission of providing a free, world-class education for anyone, anywhere.",
+        images:
+            "https://cdn.kastatic.org/images/khan-logo-dark-background-2.png",
+        // sitename: "Khan Academy",
+        // favicon: "https://cdn.kastatic.org/images/favicon.ico?logo",
+        category: 'Education',
+      ),
+      WebpageLinkModel(
+        url: 'https://www.coursera.org/',
+        title: "Coursera | Degrees, Certificates, & Free Online Courses",
+        description:
+            "Learn new job skills in online courses from industry leaders like Google, IBM, & Meta. Advance your career with top degrees from Michigan, Penn, Imperial & more. ",
+        images:
+            "https://s3.amazonaws.com/coursera/media/Grid_Coursera_Partners_updated.png",
+        // sitename: "Coursera",
+        // favicon:
+        //     "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-32x32.png",
         category: 'Education',
       ),
     ],
@@ -45,7 +69,7 @@ class WebpageLinkModel {
       // social media models
       WebpageLinkModel(
         url: 'https://twitter.com',
-        image:
+        images:
             'https://cdn.cms-twdigitalassets.com/content/dam/blog-twitter/x/blog_x_card.png.img',
         description:
             'Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets".',
@@ -54,7 +78,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://facebook.com',
-        image: 'https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico',
+        images: 'https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico',
         description:
             'Facebook is an American online social media and social networking service.',
         title: 'Facebook',
@@ -62,7 +86,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://instagram.com',
-        image:
+        images:
             'https://static.cdninstagram.com/rsrc.php/v3/yR/r/hexDR1NOpRC.png',
         description:
             'Instagram is an American photo and video sharing social networking service.',
@@ -74,7 +98,7 @@ class WebpageLinkModel {
       // news models
       WebpageLinkModel(
         url: 'https://cnn.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Cable News Network is a multinational news-based pay television channel headquartered in Atlanta.',
@@ -83,7 +107,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://bbc.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'The British Broadcasting Corporation is a public service broadcaster.',
@@ -92,7 +116,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://aljazeera.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Al Jazeera is a state-funded broadcaster in Doha, Qatar, owned by the Al Jazeera Media Network.',
@@ -101,7 +125,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://nytimes.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'The New York Times is an American newspaper based in New York City with worldwide influence and readership.',
@@ -110,7 +134,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://washingtonpost.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'The Washington Post is an American daily newspaper published in Washington, D.C.',
@@ -122,7 +146,7 @@ class WebpageLinkModel {
       // shopping models
       WebpageLinkModel(
         url: 'https://amazon.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Amazon is an American multinational technology company which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.',
@@ -131,7 +155,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://ebay.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'eBay Inc. is an American multinational e-commerce corporation based in San Jose, California.',
@@ -140,7 +164,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://aliexpress.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'AliExpress is an online retail service based in China that is owned by the Alibaba Group.',
@@ -149,7 +173,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://jumia.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Jumia is an online marketplace for electronics, and fashion among others.',
@@ -158,7 +182,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://konga.com',
-        image:
+        images:
             'https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Konga is an online marketplace for electronics, and fashion among others.',
@@ -170,7 +194,7 @@ class WebpageLinkModel {
       // entertainment models
       WebpageLinkModel(
         url: 'https://netflix.com',
-        image:
+        images:
             'https://netflix.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Netflix, Inc. is an American over-the-top content platform and production company.',
@@ -179,7 +203,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://youtube.com',
-        image:
+        images:
             'https://youtube.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'YouTube is an American online video-sharing platform headquartered in San Bruno, California.',
@@ -188,7 +212,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://spotify.com',
-        image:
+        images:
             'https://spotify.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Spotify Technology S.A. is a Swedish music streaming and media services provider.',
@@ -197,7 +221,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://soundcloud.com',
-        image:
+        images:
             'https://soundcloud.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'SoundCloud is an online audio distribution platform and music sharing website.',
@@ -206,7 +230,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://tiktok.com',
-        image:
+        images:
             'https://tiktok.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'TikTok is a Chinese video-sharing social networking service owned by ByteDance.',
@@ -218,7 +242,7 @@ class WebpageLinkModel {
       // sports models
       WebpageLinkModel(
         url: 'https://espn.com',
-        image:
+        images:
             'https://espn.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Entertainment and Sports Programming Network is an American multinational basic cable sports channel.',
@@ -227,7 +251,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://nba.com',
-        image:
+        images:
             'https://nba.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'The National Basketball Association is a professional basketball league in North America.',
@@ -236,7 +260,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://nfl.com',
-        image:
+        images:
             'https://nfl.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'The National Football League is a professional American football league.',
@@ -245,7 +269,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://mlb.com',
-        image:
+        images:
             'https://mlb.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Major League Baseball is a professional baseball organization.',
@@ -254,7 +278,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://fifa.com',
-        image:
+        images:
             'https://fifa.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'The Fédération Internationale de Football Association is an organization which describes itself as an international governing body of association football, fútsal and beach soccer.',
@@ -266,7 +290,7 @@ class WebpageLinkModel {
       // tech models
       WebpageLinkModel(
         url: 'https://google.com',
-        image:
+        images:
             'https://google.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Google LLC is an American multinational technology company that specializes in Internet-related services and products.',
@@ -275,7 +299,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://microsoft.com',
-        image:
+        images:
             'https://microsoft.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Microsoft Corporation is an American multinational technology corporation which produces computer software, consumer electronics, personal computers, and related services.',
@@ -284,7 +308,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://apple.com',
-        image:
+        images:
             'https://apple.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'Apple Inc. is an American multinational technology company that specializes in consumer electronics, computer software, and online services.',
@@ -293,7 +317,7 @@ class WebpageLinkModel {
       ),
       WebpageLinkModel(
         url: 'https://github.com',
-        image:
+        images:
             'https://github.comhttps://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png',
         description:
             'GitHub, Inc. is a provider of Internet hosting for software development and version control using Git.',

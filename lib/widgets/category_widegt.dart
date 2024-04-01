@@ -10,11 +10,12 @@ class CategoryWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Text(
+    return Text(
       text,
       style: const TextStyle(
         fontSize: 24,
         fontWeight: FontWeight.bold,
+        color: Color.fromARGB(255, 0, 0, 0),
       ),
       textAlign: TextAlign.center,
     );

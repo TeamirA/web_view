@@ -34,7 +34,7 @@ class _HomepageState extends State<Homepage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               const CategoryWidget(text: 'News Websites'),
               const SizedBox(height: 10),
               WebpagesList(webpages: WebpageLinkModel.sampleWebpages[2]),
@@ -54,7 +54,7 @@ class _HomepageState extends State<Homepage> {
               const CategoryWidget(text: 'Social Media Websites'),
               const SizedBox(height: 10),
               WebpagesList(webpages: WebpageLinkModel.sampleWebpages[1]),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
             ],
           ),
         ),

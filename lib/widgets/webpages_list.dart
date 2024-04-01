@@ -13,17 +13,13 @@ class WebpagesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 270,
+      height: 350,
       child: ListView.builder(
         itemCount: webpages.length,
         scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.all(0),
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(0),
-            child: WebpagesCard(
-              webpageLink: webpages[index],
-            ),
+          return WebpagesCard(
+            webpageLink: webpages[index],
           );
         },
       ),
