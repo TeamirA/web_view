@@ -1,16 +1,27 @@
-# web_view
+<!-- Description -->
+This app is a simple web view application built with Flutter. It allows users to view web content within the app.
 
-A new Flutter project.
+<!-- Installation -->
+To install and run the app, follow these steps:
 
-## Getting Started
+1. Clone the repository to your local machine:
+    ```
+    git clone https://github.com/your-username/your-repository.git
+    ```
 
-This project is a starting point for a Flutter application.
+2. Navigate to the project directory:
+    ```
+    cd your-repository
+    ```
 
-A few resources to get you started if this is your first Flutter project:
+3. Install the dependencies:
+    ```
+    flutter pub get
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+4. Run the app on a connected device or emulator:
+    ```
+    flutter run
+    ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+That's it! The app should now be running on your device or emulator, and you can start using the web view functionality.
