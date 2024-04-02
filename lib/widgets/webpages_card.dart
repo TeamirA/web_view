@@ -25,8 +25,8 @@ class WebpagesCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(10.0),
         margin: const EdgeInsets.all(10.0),
-        height: 260,
-        width: 220,
+        height: 240,
+        width: 250,
         decoration: const BoxDecoration(
           color: Color.fromARGB(255, 36, 35, 36),
           borderRadius: BorderRadius.all(Radius.circular(24)),
@@ -39,12 +39,12 @@ class WebpagesCard extends StatelessWidget {
             Text(
               webpageLink.title,
               style: const TextStyle(
-                fontSize: 20,
+                fontSize: 15,
                 color: Color.fromARGB(255, 198, 196, 196),
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 5),
             SizedBox(
               height: 120,
               child: Image.network(
@@ -53,7 +53,6 @@ class WebpagesCard extends StatelessWidget {
                 filterQuality: FilterQuality.high,
               ),
             ),
-            const SizedBox(height: 5),
             const SizedBox(height: 5),
             Text(
               webpageLink.description,

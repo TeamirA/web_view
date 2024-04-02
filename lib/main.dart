@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Web View',
+      title: 'WebViewer',
       theme: ThemeData(
         scaffoldBackgroundColor: Color.fromARGB(255, 62, 54, 63),
         // colorScheme:
